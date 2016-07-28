@@ -5,13 +5,15 @@
 
 @font-face { font-family: 'CorbelRegular'; src: url('corbel.eot'); src: url('corbel.eot') format('embedded-opentype'), url('corbel.woff2') format('woff2'), url('corbel.woff') format('woff'), url('corbel.ttf') format('truetype'), url('corbel.svg#CorbelRegular') format('svg'); }
 
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0px; border: 0; font-size: 100%; outline: none; }
-html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; overflow-x: hidden; }
-
-ul li { list-style-type:none;padding:0;margin:0}
-
-body { font: 12px/1.8 "HiraginoSansGB-W3", "STHeiti", 'Microsoft yahei', tahoma; margin: 0 auto; color: #999999; background-color: #fff; font-family:"HiraginoSansGB-W3","STHeiti",'Microsoft yahei',tahoma !important; }
+body {
+	.qng_wrapper{
+	font: 12px/1.8 "HiraginoSansGB-W3", "STHeiti", 'Microsoft yahei', tahoma; 
+	margin: 0 auto;
+	color: #999999; 
+	background-color: #fff; 
+	font-family:"HiraginoSansGB-W3","STHeiti",'Microsoft yahei',tahoma !important;
+	}
+}
 
 a:link {
 	text-decoration: none;
@@ -77,6 +79,7 @@ a:active {
 		 float:left;
 		 list-style-type: none;
 		 width:auto;
+		 margin: 0;
 		 li{
 			 width:auto;
 			 float:left;
