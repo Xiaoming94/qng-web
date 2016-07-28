@@ -1,0 +1,42 @@
+<div class="dashboard admin-container row">
+	<div id="greeting-card" class="col s12">
+		<div class="card white">
+		<div class="card-content">
+			<h1>Greetings! </h1>
+			<span>
+				Welcome to the admin panel dashboard.
+				From here, you can manage your articles, pages, uploads
+				aswell as changing you accounts password.
+				<br /><br />
+				Below are some useful links, Enjoy your time!
+			</span>
+		</div>
+		</div>
+	</div>
+		<div id="articles" class="col s6">
+			<div class="card white">
+			<div class="card-content">
+			<h2>Articles</h2>
+			<span>
+				Manage all your articles <br />
+				Here you can view your articles, edit them, and write new ones!<br /><br />
+				<%= link_to "Manage articles" , admin_articles_path , class: "btn waves-effect waves-light blue black-text" %>
+				<%= link_to "New article", new_admin_article_path , class: "btn waves-effect waves-light blue black-text" %>
+			</span>
+			</div>
+			</div>
+		</div>
+		<div id="pages" class="col s6">
+			<div class="card white">
+			<div class="card-content">
+			<h2>Pages</h2>
+			<span>Manage all your pages.<br />
+				Here you can create new pages, aswell as editing already existing ones.
+				<br /><br />
+				<%= link_to "Manage pages", admin_pages_path , class: "btn waves-effect waves-light blue black-text" %>
+				<%= link_to "New page", new_admin_page_path , class: "btn waves-effect waves-light blue black-text" %>
+			</span>
+			</div>
+			</div>
+		</div>
+</div>

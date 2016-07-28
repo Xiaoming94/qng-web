@@ -1,0 +1,14 @@
+//Font configurations
+
+@font-face {
+	font-family:"Open Sans";
+	src:url("/assets/OpenSans-Regular.eot?") format("eot"),
+		url("/assets/OpenSans-Regular.woff") format("woff"),
+		url("/assets/OpenSans-Regular.ttf") format("truetype"),
+		url("/assets/OpenSans-Regular.svg#OpenSans") format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+
+$main-font: "Open Sans", sans-serif;
+

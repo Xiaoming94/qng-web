@@ -1,0 +1,14 @@
+colorscheme molokai_dark
+"set expandtab
+set shiftwidth=4
+set tabstop=4
+set softtabstop=4
+set nospell
+
+set noexpandtab
+
+syntax on
+
+filetype plugin indent on
+set grepprg=grep\ -nH\ $*
+let g:tex_flavor = "latex"

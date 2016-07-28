@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WebTool</title>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= stylesheet_link_tag    'admin/base',  media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="admin-wrapper">
+		<div class="header z-depth-1">
+			<nav>
+				<div class="nav-wrapper center light-blue darken-3">
+					<h1>Admin Panel</h1>
+					<ul id="nav-mobile" class="header-links right">
+						<li><%= link_to "Log Out", admin_logout_path, method: "delete", class: "white-text" %></li>
+					</ul>
+				</div>
+			</nav>
+		</div >
+		<div class="row">
+			<div class="sidebar col s2 z-depth-1 white">
+				<ul>
+					<li><%= link_to "Dashboard", admin_root_path %></li>
+					<li><%= link_to "Articles", admin_articles_path %></li>
+					<li><%= link_to "Pages" , admin_pages_path %></li>
+					<li><%= link_to "Uploads", admin_uploads_path %></li>
+				</ul>
+			</div>
+			<div class="col s10 content right">
+				<main>
+					<%= yield %>
+				</main>
+				<footer>
+					<% if Rails.env.development? %>
+					<div class="debug-box card black white-text">
+						<%= debug(params) %>
+					</div>
+					<% end %>
+				</footer>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

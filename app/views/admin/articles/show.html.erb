@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+<div class="admin-container">
+	<div class="card white black-text">
+		<div class="card-content">
+			<strong>Title:</strong>
+			<h3 class="preview-title"><%= @article.title %></h3>
+
+			<div class="preview-content">
+				<p>
+					<strong>Content:</strong>
+					<%= markdown @article.content %>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<%= link_to 'Edit', edit_admin_article_path(@article), class: "btn waves-effect waves-light blue black-text" %>
+<%= link_to 'Back', admin_articles_path, class: "btn blue waves-effect waves-light black-text" %>

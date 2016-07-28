@@ -1,0 +1,23 @@
+<% if !@image.errors.empty? %>
+	<div class="alert alert-error">
+		<ul>
+			<% @image.errors.full_messages.each do |msg| %>
+				<li><%= msg %></li>
+			<% end %>
+		</ul>
+	</div>
+<% end %>
+<div class="admin-container">
+	<h2>Upload new Image: </h2>
+	<div class="card white black-text">
+		<div class="card-content">
+		<%= form_for ([:admin ,@image]), html: {multipart: true} do |f|%>		
+			<%= f.label :name %>
+			<%= f.text_field :name %>
+			<%= f.label :attachment %>
+			<%= f.file_field :attachment %>
+			<%= f.submit "Save" ,class: "btn waves-effect waves-light blue black-text "%>
+		<% end %>
+		</div>
+	</div>
+</div>

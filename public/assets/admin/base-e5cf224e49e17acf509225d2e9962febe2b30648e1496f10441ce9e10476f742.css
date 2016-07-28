@@ -1,0 +1,113 @@
+/**
+
+*/
+@font-face {
+  font-family: "Open Sans";
+  src: url("/assets/OpenSans-Regular.eot?") format("eot"), url("/assets/OpenSans-Regular.woff") format("woff"), url("/assets/OpenSans-Regular.ttf") format("truetype"), url("/assets/OpenSans-Regular.svg#OpenSans") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 1, /home/xiaoming/dev/WebTool/app/assets/stylesheets/admin/_header.scss */
+.header {
+  overflow: auto;
+  height: 3.5em;
+  font: 100% "Open Sans", sans-serif;
+}
+/* line 5, /home/xiaoming/dev/WebTool/app/assets/stylesheets/admin/_header.scss */
+.header h1 {
+  font-size: 2.5em;
+  margin: 0;
+  width: auto;
+  display: inline;
+}
+/* line 11, /home/xiaoming/dev/WebTool/app/assets/stylesheets/admin/_header.scss */
+.header ul {
+  list-style: none;
+  height: 100%;
+}
+/* line 14, /home/xiaoming/dev/WebTool/app/assets/stylesheets/admin/_header.scss */
+.header ul li {
+  display: inline-block;
+  float: left;
+  font-size: 1.5em;
+  height: inherit;
+}
+/* line 19, /home/xiaoming/dev/WebTool/app/assets/stylesheets/admin/_header.scss */
+.header ul li a {
+  font-size: inherit;
+  height: inherit;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-right: 14px;
+  padding-left: 16px;
+}
+/* line 31, /home/xiaoming/dev/WebTool/app/assets/stylesheets/admin/_header.scss */
+.header nav {
+  height: inherit;
+}
+
+/* line 1, /home/xiaoming/dev/WebTool/app/assets/stylesheets/admin/_sidebar.scss */
+.sidebar {
+  height: 95.2%;
+  position: absolute;
+  padding: 0 !important;
+}
+/* line 6, /home/xiaoming/dev/WebTool/app/assets/stylesheets/admin/_sidebar.scss */
+.sidebar ul li {
+  font: 100% "Open Sans", sans-serif;
+  font-size: 1.5em;
+}
+/* line 9, /home/xiaoming/dev/WebTool/app/assets/stylesheets/admin/_sidebar.scss */
+.sidebar ul li a {
+  display: inline-block;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 13px;
+  padding-right: 10px;
+  color: #000;
+}
+/* line 19, /home/xiaoming/dev/WebTool/app/assets/stylesheets/admin/_sidebar.scss */
+.sidebar ul li a:hover {
+  background-color: #dddddd;
+}
+
+/* line 1, /home/xiaoming/dev/WebTool/app/assets/stylesheets/admin/_content.scss */
+.content {
+  width: auto;
+}
+
+/* line 4, /home/xiaoming/dev/WebTool/app/assets/stylesheets/admin/articles.scss */
+#articles-index {
+  width: 80%;
+}
+
+/* line 16, /home/xiaoming/dev/WebTool/app/assets/stylesheets/admin/base.scss */
+.admin-wrapper {
+  font: 100% "Open Sans", sans-serif;
+  background: #efefef;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+/* line 22, /home/xiaoming/dev/WebTool/app/assets/stylesheets/admin/base.scss */
+.admin-wrapper h1 {
+  margin-top: 5px;
+  margin-bottom: 50px;
+}
+/* line 28, /home/xiaoming/dev/WebTool/app/assets/stylesheets/admin/base.scss */
+.admin-wrapper h2 {
+  margin-top: 5px;
+  margin-bottom: 50px;
+}
+
+/* line 36, /home/xiaoming/dev/WebTool/app/assets/stylesheets/admin/base.scss */
+.admin-container {
+  width: 80%;
+  margin-left: 0;
+}
+/* line 41, /home/xiaoming/dev/WebTool/app/assets/stylesheets/admin/base.scss */
+.admin-container a {
+  display: inline-block;
+  margin-top: 5px;
+}

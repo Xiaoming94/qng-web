@@ -1,0 +1,25 @@
+.sidebar {
+	height: 100%;
+	position: absolute;
+	padding:0 !important;
+	ul{
+		li{
+			font: 100% $main-font;
+			font-size: 1.5em;
+			a{
+				display: inline-block;
+				width: 100%;
+				padding: {
+					top: 10px;
+					bottom: 10px;
+					left: 13px;
+					right: 10px;
+				}
+				color: #000;
+				&:hover{
+					background-color: #dddddd;
+				}
+			}
+		}
+	}
+}

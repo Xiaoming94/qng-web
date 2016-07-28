@@ -1,0 +1,47 @@
+// Place all the styles related to the admin/base controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+// This is a Manifest file
+/**
+*= require_self
+*/
+@import "../fonts";
+@import "header";
+@import "sidebar";
+@import "content";
+@import "footer";
+@import "articles";
+@import "pages";
+@import "images";
+@import "items";
+.admin-wrapper {
+	font: 100% $main-font;
+	background: #efefef;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+	h1 {
+		margin: {
+			top: 5px;
+			bottom: 50px;
+		}
+	};
+	h2 {
+		margin: {
+			top: 5px;
+			bottom: 50px;
+		}
+	}
+}
+
+.admin-container {
+	width: 80%;
+	margin-left: 0;
+	#pages {
+	}
+	a {
+		 display: inline-block;
+		 margin-top: 5px;
+	}
+}

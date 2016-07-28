@@ -1,0 +1,24 @@
+<h3>Files</h3>
+<p>
+	Manage your uploaded files. Here you can view the uploaded files. <br />
+	Upload new file and delete uploaded files <br /><br />
+</p>
+<table>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>File</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @files.each do |item| %>
+			<tr>
+				<td><%= item.name %></td>
+				<td><%= link_to "View File", item.attachment_url %>
+			</tr>
+		<% end %>
+	</tbody>
+</table>
+
+<%= link_to "View all files", admin_items_path , class: "btn waves-effect waves-light blue black-text" %>
+<%= link_to "Upload a file", new_admin_item_path , class: "btn waves-effect waves-light blue black-text" %>

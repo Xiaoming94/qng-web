@@ -1,0 +1,34 @@
+.header {
+	overflow: auto;
+	height: 3.5em;
+	font: 100% $main-font;
+	h1 {
+		font-size: 2.5em;
+		margin: 0;
+		width: auto;
+		display: inline;
+	}
+	ul {
+		list-style: none;
+		height: 100%;
+		li {
+			display: inline-block;
+			float:left;
+			font-size: 1.5em;
+			height: inherit;
+			a {
+				font-size: inherit;
+				height: inherit;
+				padding: {
+					top: 14px;
+					bottom: 14px;
+					right: 14px;
+					left: 16px;
+				}
+			}
+		}
+	}
+	nav {
+		height: inherit;
+	}
+}

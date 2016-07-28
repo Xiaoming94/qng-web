@@ -1,0 +1,22 @@
+<% if !flash[:notice].blank? %>
+	<div class = "alert alert-info">
+		<%= flash[:notice] %>
+	</div>
+	<br/>
+<% end %>
+<div class="admin-container">
+	<h2>All Images</h2>
+	<div class="card white black-text">
+		<div class="card-content image-grid">
+			Here are all your images: <br />
+			<%@images.reverse.each do |image| %>
+				<div class="image-grid-item col s2">
+					<%= link_to(image_tag(image.attachment.thumb.url), image.attachment_url) %><br />
+					<strong>Name: <%= image.name %></strong><br />
+					<%= link_to "Delete", admin_image_path(image), :method => :delete, confirm: "Are you sure?" , class: "btn waves-effect waves-light red darken-4 white-text"%>
+				</div>
+			<% end %>
+		</div>
+	</div>
+	<%= link_to "Upload New Image", new_admin_image_path, class: "btn waves-effect waves-light green accent-3 black-text" %>
+</div>

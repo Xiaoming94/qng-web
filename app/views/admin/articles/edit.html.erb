@@ -1,0 +1,6 @@
+<h1>Editing Article</h1>
+<div class="admin-container">
+<%= render 'form' %>
+</div>
+<%= link_to 'Back', admin_articles_path, data: { confirm: "are you sure? all saved data will be lost" },class: "btn waves-effect waves-light red darken-4 white-text" %>
+<%= link_to 'Show', [:admin, @article] , class: "btn waves-effect waves-light blue black-text" %>

@@ -1,0 +1,36 @@
+<% if !flash[:notice].blank? %>
+	<div class = "alert alert-info">
+		<%= flash[:notice] %>
+	</div>
+	<br/>
+<% end %>
+
+<br/>
+<div class="admin-container">
+	<h2>All Files</h2>
+	<div class="card white black-text">
+		<div class="card-content">
+		<table>
+			<thead>	
+				<tr>
+					<th>Name</th>
+					<th>Download Link</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<% @items.each do |item| %>
+					<tr>
+						<td><%= item.name %></td>
+						<td><%= link_to "View File", item.attachment_url%></td>
+						<td><%= button_to "Delete", admin_item_path(item) ,
+							:method => :delete, confirm: "Are you sure",
+							class: "btn red darken-4"%></td>
+					</tr>
+				<% end %>
+			</tbody>
+		</table>
+		</div>
+	</div>
+	<%= link_to "Upload File" , new_admin_item_path , class:"btn waves-effect waves-light green accent-3 black-text"%>
+</div>
