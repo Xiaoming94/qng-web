@@ -1,3 +1,94 @@
 // Place all the styles related to the webpage controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+/* CSS Document */
+
+@font-face { font-family: 'CorbelRegular'; src: url('corbel.eot'); src: url('corbel.eot') format('embedded-opentype'), url('corbel.woff2') format('woff2'), url('corbel.woff') format('woff'), url('corbel.ttf') format('truetype'), url('corbel.svg#CorbelRegular') format('svg'); }
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0px; border: 0; font-size: 100%; outline: none; }
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; overflow-x: hidden; }
+
+ul li { list-style-type:none;padding:0;margin:0}
+
+body { font: 12px/1.8 "HiraginoSansGB-W3", "STHeiti", 'Microsoft yahei', tahoma; margin: 0 auto; color: #999999; background-color: #fff; font-family:"HiraginoSansGB-W3","STHeiti",'Microsoft yahei',tahoma !important; }
+
+a:link {
+	text-decoration: none;
+
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+	
+}
+a:active {
+	text-decoration: none;
+}
+
+.qng_layout { width: 100%; margin: 0 auto; }
+
+.container { position:relative; width:100%; margin:0 auto; }
+
+  .content { height: 100%; margin: 0 auto; }
+  
+  .content a { display: none; }
+  
+  .item { width: 100%; height: 50px; line-height: 50px; /*background: rgba(0, 0, 0, 0.6);*/ background: #000; opacity: 0.6; color: #fff; /*font-size: 120px;*/ position: absolute; left: 0; bottom: 0; text-align: center; }
+  
+  .content img { width: 100%;}
+  
+  .item a { margin-right: 10px; cursor: pointer; /*float:left; display:block;*/ display: inline-block; width: 15px; height: 15px; background: #fff; -webkit-border-radius: 15px; border-radius: 15px; -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
+  
+  .item a.active { color: #06C; background: #06C; -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.6); box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);}
+
+.clear {width:100%; height:4px; background-color:#999;}
+
+.qng_dh {width:100%; margin:0 auto; height:100px;}
+
+.qng_logo {width:30%; height:60px; margin-top:20px; text-align:left; float:left;}
+
+.qng_logo li {width:293px; height:60px; list-style-type:none; margin-left:20px;}
+
+.qng_dhnav {width:70%; height:30px; margin:0 auto; margin-top:35px; text-align:right; float:right;}
+
+.qng_dhnavli {width:auto; text-align:cnter; line-height:30px;  float:left; list-style-type:none; font-size:14px; color:#000;}
+
+.qng_dhfg {width:31px; text-align:center; line-height:30px; font-size:12px; float:left;}
+
+.qng_dhbox {float:right;}
+
+.qng_dhnavli a:link {color:#333;}
+
+.qng_dhnavli a:hover {color:red; border-bottom:#F00 solid 4px;}
+
+.clear_line {width:100%; height:24px;}
+
+
+.qng_lc {width:1152px; margin:0 auto; height:724px;
+
+ margin-bottom:60px;}
+
+.qng_xmbox {width:100%; margin:0 auto; height:666px; background-image:url(../images/qng_bj1.jpg);}
+
+.qng_xmbox li {width:1152px; height:221px; margin:0 auto; list-style-type:none;}
+
+.qng_lcmenue {width:100%; margin:0 auto; height:91px;}
+
+.qng_lcmenue li {width:1152px; margin:0 auto; height:91px; list-style-type:none;}
+
+
+
+.qng_lcmelb {width:520px; height:45px; border-bottom:#DEDDE5 solid 1px; float:left;}
+
+.qng_lcmecent {width:92px; height:91px; padding-left:10px; padding-right:10px; float:left;}
+
+
+
+.qng_footer {width:100%; margin:0 auto;  height:220px;}
+
+.qng_footer ul {width:1152px;  list-style-type:none;}
+
+.qng_footer li {width:1152px; height:220px; margin:0 auto; list-style-type:none;}
