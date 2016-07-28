@@ -1,4 +1,4 @@
-class PagesController < ApplicationController
+class PagesController < WebpageController
   before_action :set_page, only: [:show, :edit, :update, :destroy]
 
   # GET /pages
