@@ -19,7 +19,7 @@ default: &default
 
 development:
   <<: *default
-  database: WebTool_development
+  database: QNG_devdb
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -49,6 +49,6 @@ development:
 #
 production:
   <<: *default
-  database: WebTool_production
+  database: QNG_Web_Database
   username: WebTool
   password: <%= ENV['WEBTOOL_DATABASE_PASSWORD'] %>
