@@ -19,15 +19,13 @@
 				<div class="qng_dhbox">
 					<% topnavpages = Page.where(useage: "topnav") %>
 					<ul>
+						<li><%= link_to	"网站首页", root_path  %></li>
 					<% topnavpages.each do |tnp| %>
+						<div class= "qng_dhfg"> | </div>
 						<li><%= link_to tnp.title, page_path(tnp.title) %></li>
-						<% if !(topnavpages.last.id == tnp.id) %>
-							<div class= "qng_dhfg"> | </div>
-						<% else %>
-							<div class= "qng_dhfg"> </div>
-						<%end%>
 					<% end %>
 					</ul>
+					<div class= "qng_dhfg"> </div>
 				</div>
 			</div>
 		</div>
