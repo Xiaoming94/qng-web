@@ -48,17 +48,45 @@ a:active {
 
 .qng_dh {width:100%; margin:0 auto; height:100px;}
 
-.qng_logo {width:30%; height:60px; margin-top:20px; text-align:left; float:left;}
+.qng_logo {
+		width:20%;
+		height:60px; 
+		margin-top:20px;
+		margin-left: 20px;
+		text-align:left;
+		float:left;
+}
 
-.qng_logo li {width:293px; height:60px; list-style-type:none; margin-left:20px;}
+.qng_dhnav {
+	width:70%;
+	height:30px;
+	margin:0 auto;
+	margin-top:35px;
+	text-align:right;
+	float:right;
+}
 
-.qng_dhnav {width:70%; height:30px; margin:0 auto; margin-top:35px; text-align:right; float:right;}
-
-.qng_dhnavli {width:auto; text-align:cnter; line-height:30px;  float:left; list-style-type:none; font-size:14px; color:#000;}
+.qng_dhnavli {width:auto; text-align:center; line-height:30px;  float:left; list-style-type:none; font-size:14px; color:#000;}
 
 .qng_dhfg {width:31px; text-align:center; line-height:30px; font-size:12px; float:left;}
 
-.qng_dhbox {float:right;}
+.qng_dhbox {
+	float:right;
+	ul {
+		 display:block;
+		 float:left;
+		 list-style-type: none;
+		 width:auto;
+		 li{
+			 width:auto;
+			 float:left;
+			 text-align:center;
+			 font-size:14px;
+			 line-height:30px;
+		 }
+	}
+}
+
 
 .qng_dhnavli a:link {color:#333;}
 

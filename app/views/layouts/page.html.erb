@@ -20,6 +20,11 @@
 					<ul>
 					<% topnavpages.each do |tnp| %>
 						<li><%= link_to tnp.title, page_path(tnp.title) %></li>
+						<% if !(topnavpages.last.id == tnp.id) %>
+							<div class= "qng_dhfg"> | </div>
+						<% else %>
+							<div class= "qng_dhfg"> </div>
+						<%end%>
 					<% end %>
 					</ul>
 				</div>
