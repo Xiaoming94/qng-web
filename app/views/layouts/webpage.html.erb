@@ -13,21 +13,15 @@
 	<body>
 
 		<div class="qng_dh">
-			<div class="qng_logo"><li><img src="images/logo.jpg"></li></div>
+			<div class="qng_logo"><></div>
 			<div class="qng_dhnav">
 				<div class="qng_dhbox">
-					<div class="qng_dhnavli"><a href="#">网站首页</a></div>
-					<div class="qng_dhfg">|</div>
-					<div class="qng_dhnavli"><a href="#">关于我们</a></div>
-					<div class="qng_dhfg">|</div>
-					<div class="qng_dhnavli"><a href="#">体验营</a></div>
-					<div class="qng_dhfg">|</div>
-					<div class="qng_dhnavli"><a href="#">手工坊</a></div>
-					<div class="qng_dhfg">|</div>
-					<div class="qng_dhnavli"><a href="#">自然吧</a></div>
-					<div class="qng_dhfg">|</div>
-					<div class="qng_dhnavli"><a href="#">加盟流程</a></div>
-					<div class="qng_dhfg"></div>
+					<% topnavpages = Page.where(useage: "topnav") %>
+					<ul>
+					<% topnavpages.each do |tnp| %>
+						<li><%= link_to tnp.title, page_path(tnp.title) %></li>
+					<% end %>
+					</ul>
 				</div>
 			</div>
 		</div>

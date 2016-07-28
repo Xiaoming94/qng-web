@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   post 'login', to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'
 
-  get 'pages/:title', to: 'pages#showbytitle'
+  get 'pages/:title', to: 'pages#showbytitle', as: 'page'
   namespace :admin do
     root 'base#index'
     get 'login', to: 'base#login'
