@@ -1,11 +1,5 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Title:</strong>
-  <%= @page.title %>
-</p>
-
-<p>
-  <strong>Body:</strong>
-  <%= markdown @page.body %>
-</p>
+<div class="qng-page-content container black-text">
+	<h2><%= @page.title %></h2>
+	<div class="clear"></div>
+	<%= markdown @page.body %>
+</div>
