@@ -50,5 +50,5 @@ development:
 production:
   <<: *default
   database: QNG_Web_Database
-  username: WebTool
-  password: <%= ENV['WEBTOOL_DATABASE_PASSWORD'] %>
+  username: qng
+  password: <%= Rails.application.secrets[:database][:password] %>
